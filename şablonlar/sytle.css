@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow: hidden; /* Taşmayı engellemek için */
+}
+
+#video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* İçerik üstte kalması için */
+    transform: translate(-50%, -50%);
+}
+
+.hero {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials {
+    background-color: #343a40; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 40px 0;
+}
+
+#comment-section {
+    display: none; /* Varsayılan olarak gizli */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px); /* Kenar boşlukları için ayarlama */
+    left: 20px;
+}
+
+#form-response {
+    color: green; /* Başarı mesajı için renk */
+}
